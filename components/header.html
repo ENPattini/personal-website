@@ -1,0 +1,66 @@
+<!-- ==================== SITE HEADER & NAVIGATION ==================== -->
+<header>
+  <!-- Main Navigation Bar -->
+  <nav class="navbar">
+    
+    <!-- Logo (links back to home) -->
+    <div class="logo">
+      <a href="../index.html">
+        <img src="/images/logo.png" 
+             alt="Emilio Pattini Logo" 
+             class="logo-img">
+      </a>
+    </div>
+
+    <!-- Primary Navigation Links (centered in desktop, hidden in mobile) -->
+    <ul class="nav-links">
+      <!-- Data Dropdown -->
+      <li>
+        <a href="#">Data</a>
+        <ul class="dropdown">
+          <li>
+            <a href="../data-analysis/data-analysis.html">Data Analysis</a>
+          </li>
+        </ul>
+      </li>
+
+      <!-- Development Dropdown -->
+      <li>
+        <a href="#">Development</a>
+        <ul class="dropdown">
+          <li>
+            <a href="../web-development/web-development.html">Web Development</a>
+          </li>
+        </ul>
+      </li>
+
+      <!-- Direct Links -->
+      <li>
+        <a href="../about.html">About</a>
+      </li>
+      <li>
+        <a href="../contact.html">Contact</a>
+      </li>
+    </ul>
+
+    <!-- Search Box (desktop: expands on focus, mobile: adjusts size) -->
+    <div class="search-box">
+      <!-- Search Input -->
+      <input type="text" 
+             id="search" 
+             placeholder="Search works..." 
+             autocomplete="off">
+
+      <!-- Search Button (magnifying glass icon) -->
+      <button id="search-btn" type="button">🔍</button>
+
+      <!-- Search Results Dropdown (populated dynamically by JS) -->
+      <ul id="search-results"></ul>
+    </div>
+
+    <!-- Hamburger Menu Icon (visible only on mobile, toggles nav-links) -->
+    <div class="hamburger" onclick="toggleMenu()">
+      ☰
+    </div>
+  </nav>
+</header>

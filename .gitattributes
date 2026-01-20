@@ -1,0 +1,5 @@
+# Note on Language Detection
+# The file `projects/ecobici-2024/urban-mobility-analysis.html` (~2.8 MB) is an RMarkdown-generated report with embedded HTML output (charts, tables, interactive elements, etc.).
+# To prevent it from dominating GitHub's language stats (which are byte-based), this file is excluded from code detection
+
+projects/ecobici-2024/urban-mobility-analysis.html linguist-detectable=false
