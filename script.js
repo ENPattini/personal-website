@@ -107,11 +107,11 @@ function getBasePath() {
 const basePath = getBasePath();
 
 // Load header (with callbacks for listeners) and footer
-loadHTML('header', basePath + 'components/header.html', () => {
+loadHTML('header', basePath + '/components/header.html', () => {
   attachDropdownListeners();
   attachSearchListeners();
 });
-loadHTML('footer', basePath + 'components/footer.html');
+loadHTML('footer', basePath + '/components/footer.html');
 
 // ==================== SLIDER / CAROUSEL ====================
 
