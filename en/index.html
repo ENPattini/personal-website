@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Page title - displayed in browser tab and search results -->
+  <title>Emilio Nahuel Pattini | Portfolio - Data Analyst & Web Developer</title>
+  
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="/style.css">
+  
+  <!-- Main JavaScript file - loaded at the end for better performance -->
+  <script src="/script.js" defer></script>
+
+  <!-- Basic SEO Meta Tags -->
+  <meta name="description" content="Personal portfolio of Emilio Nahuel Pattini: urban data analysis and responsive web development projects.">
+  <meta name="keywords" content="data analyst, web developer, data analysis, urban mobility, R, Python, SQL, Tableau, JavaScript, HTML, CSS, portfolio, Buenos Aires">
+  <meta name="author" content="Emilio Nahuel Pattini">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph (Facebook, LinkedIn, WhatsApp, etc.) -->
+  <meta property="og:title" content="Emilio Nahuel Pattini | Data Analyst & Web Developer Portfolio">
+  <meta property="og:description" content="Exploring urban data and building modern websites. Featured in mobility analysis and frontend development. Let's connect!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.emilionahuelpattini.com">
+  <meta property="og:image" content="https://www.emilionahuelpattini.com/images/portfolio-og-image.jpg">
+  <meta property="og:image:alt" content="Portfolio thumbnail of Emilio Nahuel Pattini">
+  <meta property="og:site_name" content="Emilio Nahuel Pattini Portfolio">
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Emilio Nahuel Pattini | Data & Web Portfolio">
+  <meta name="twitter:description" content="Data Analyst & Web Developer | Projects in urban mobility analysis and responsive web development">
+  <meta name="twitter:image" content="https://www.emilionahuelpattini.com/images/portfolio-og-image.jpg">
+
+  <!-- Canonical URL (prevents duplicate content issues) -->
+  <link rel="canonical" href="https://www.emilionahuelpattini.com/en/index.html">
+
+  <link rel="alternate" hreflang="en" href="https://www.emilionahuelpattini.com/en/index.html">
+  <link rel="alternate" hreflang="es" href="https://www.emilionahuelpattini.com/es/index.html">
+  <link rel="alternate" hreflang="it" href="https://www.emilionahuelpattini.com/it/index.html">
+
+
+  <!-- Favicon (place your favicon.ico in the root) -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+  <!-- ==================== HEADER (loaded dynamically via JS) ==================== -->
+  <div id="header"></div>
+
+  <!-- ==================== INTRODUCTION SECTION ==================== -->
+  <section class="intro">
+    <h1>Welcome to My Portfolio</h1>
+
+    <h2>Overview</h2>
+    <p>
+      I’m <strong>Emilio Nahuel Pattini</strong>, a Data Analyst and Web Developer passionate about 
+      transforming complex datasets into actionable insights and building responsive, accessible websites. 
+      This portfolio showcases my dual expertise in <em>data analysis</em> and <em>web development</em>, 
+      demonstrated through projects like the Ecobici 2024 Urban Mobility Analysis and this very website.
+    </p>
+
+    <h2>Skills Highlighted</h2>
+    <ul>
+      <li><strong>Data Analysis:</strong> R, Python, SQL, Tableau, geospatial visualization, forecasting basics</li>
+      <li><strong>Web Development:</strong> HTML5, CSS3, JavaScript (interactive components, responsive design), WordPress</li>
+      <li><strong>Visualization & Reporting:</strong> Tableau, Power BI, Matplotlib, Seaborn, R Markdown</li>
+      <li><strong>Workflow & Communication:</strong> data cleaning, reproducible reporting, business storytelling</li>
+      <li><strong>Languages:</strong> Spanish (Native), English (Fluent), Italian (Intermediate), Portuguese (Basic)</li>
+    </ul>
+
+    <h2>Featured Projects</h2>
+    
+    <h3>Ecobici 2024 Urban Mobility Analysis</h3>
+    <p>
+      An in-depth analysis of bike-sharing data in Buenos Aires, uncovering usage patterns, peak times, 
+      and station performance. Includes interactive dashboards and geospatial visualizations.
+    </p>
+    <p>
+      <a href="data/data-analysis/projects/ecobici-2024/urban-mobility-analysis.html" target="_blank" rel="noopener noreferrer">
+        View Project
+      </a>
+    </p>
+
+    <h3>Personal Portfolio Website</h3>
+    <p>
+      A responsive, accessible portfolio site built with HTML, CSS, and JavaScript, featuring an interactive carousel and a professional, polished design. This project demonstrates my web 
+      development and branding skills.
+    </p>
+    <p>
+      <a href="/en/index.html" target="_blank" rel="noopener noreferrer">
+        View Project
+      </a>
+    </p>
+  </section>
+
+  <!-- ==================== FEATURED PROJECTS SLIDER ==================== -->
+  <div class="slider">
+    <!-- Slide 1: Ecobici Project -->
+    <div class="slide active">
+      <div class="image-area">
+        <a href="data/data-analysis/projects/ecobici-2024/urban-mobility-analysis.html" target="_blank">
+          <img src="data/data-analysis/projects/ecobici-2024/dashboard_thumbnail.png" alt="Ecobici 2024 Thumbnail - Urban Mobility Dashboard">
+        </a>
+      </div>
+      <p>Ecobici 2024: Urban Mobility Analysis focusing on bike-sharing usage patterns and station performance.</p>
+    </div>
+
+    <!-- Slide 2: Portfolio Website -->
+    <div class="slide">
+      <div class="image-area">
+        <a href="/en/index.html" target="_blank">
+          <img src="/images/thumbnails/personal_website_thumbnail.jpg" alt="Personal Portfolio Website Thumbnail">
+        </a>
+      </div>
+      <p>Personal Portfolio Website: Responsive design, interactive components, and polished branding.</p>
+    </div>
+
+    <!-- Navigation Controls -->
+    <button class="prev" aria-label="Previous slide">&#10094;</button>
+    <button class="next" aria-label="Next slide">&#10095;</button>
+
+    <!-- Dots Navigation (dynamically populated by JS) -->
+    <div class="dots" role="tablist"></div>
+
+    <!-- Screen reader announcement live region -->
+    <div class="sr-announcer" aria-live="polite" aria-atomic="true" style="position:absolute; left:-9999px;"></div>
+  </div>
+
+  <!-- ==================== FOOTER (loaded dynamically via JS) ==================== -->
+  <div id="footer"></div>
+
+</body>
+</html>

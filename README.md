@@ -1,58 +1,114 @@
 # Emilio Nahuel Pattini - Personal Website
 
-**Source code for my personal portfolio website**  
-
-Built from scratch with HTML5, CSS3, and vanilla JavaScript.  
-Fully responsive, accessible, and static — no frameworks.
+*Available in: 🇬🇧 English (this file) | 🇪🇸 Español → README.es.md | 🇮🇹 Italiano → README.it.md*
 
 
-## Live Site
+**Source code for my multilingual personal portfolio website.**  
+
+Built entirely from scratch using HTML5, CSS3, and vanilla JavaScript, with a focus on clarity, accessibility, and long‑term maintainability.
+  
+The site is fully static, responsive, and optimized for fast loading on Hostinger with a custom domain.
+
+
+## Live Website
 
 🌐 https://www.emilionahuelpattini.com
 
-Showcases projects in data analysis, data science, web development, AI, engineering and more.
+Showcases work across **data analysis**, **data science**, **web development**, **AI**, and **engineering**.
 
 
 ## Key Features
 
-- Mobile-first responsive design with clamp() typography and flex/grid layouts
-- Dynamic header & footer loading (via `fetch`)
-- Real-time interactive search with safe highlighting (DOM nodes, no `innerHTML`)
-- Accessible carousel slider (ARIA roles, keyboard navigation, auto-play + pause on hover)
-- Hamburger menu + dropdowns on mobile only
-- Clean, semantic HTML + English code comments
-- Basic SEO, Open Graph, Twitter Cards, and custom favicon
+- Mobile‑first responsive design
+- Fluid typography using clamp()
+- Flexbox + Grid layout system
+- Accessible carousel (ARIA roles, keyboard navigation, reduced‑motion support)
+- Dynamic header and footer loading via fetch()
+- Language‑specific components (header.html, header-es.html, header-it.html, etc.)
+- Real‑time search with safe DOM node highlighting (no innerHTML)
+- Search results filtered by active language
+- Clean semantic HTML with English code comments
+- Basic SEO, Open Graph, Twitter Cards, and custom favicons
+
+
+## Multilingual Support
+
+The website is fully available in **English**, **Spanish**, and **Italian**.
+
+A smart index.html at the root automatically redirects visitors based on their browser language:
+
+- es → /es/
+- it → /it/
+- en → /en/
+- any other language → shows the fallback language selector
+
+A fallback language selector is displayed if the browser language is not supported.
 
 
 ## Project Structure
+```
+/
+|-- index.html
+|-- script.js
+|-- style.css
+|
+|-- components/
+|     |-- header.html
+|     |-- header-es.html
+|     |-- header-it.html
+|     |-- footer.html
+|     |-- footer-es.html
+|     |-- footer-it.html
+|
+|-- en/
+|   |-- index.html
+|   |-- about.html
+|   |-- contact.html
+|   |
+|   |-- data/
+|   |     |-- data-analysis/
+|   |           |-- data-analysis.html
+|   |           |-- projects/
+|   |                 |-- ecobici-2024/
+|   |                       |-- index.html
+|   |                       |-- urban-mobility-analysis.html
+|   |                       |-- urban-mobility-analysis.pdf
+|   |                       |-- urban-mobility-analysis_files/...
+|   |
+|   |-- development/
+|         |-- web-development/
+|               |-- web-development.html
+|
+|-- es/  (same structure as /en)
+|-- it/  (same structure as /en)
+|
+|-- images/
+|   |-- logo.png
+|   |-- profile.jpg
+|   |-- thumbnails/
+|   |-- favicons/
+|
+|-- LICENSE
+|-- README.md
+```
 
-```
-emilio-pattini-portfolio/
-├── index.html                  # Home / Landing page
-├── data-analysis/
-│   └── data-analysis.html
-├── web-development/
-│   └── web-development.html
-├── about.html
-├── contact.html
-├── components/
-│   ├── header.html
-│   └── footer.html
-├── projects/
-│   └── ecobici-2024/
-│       └── urban-mobility-analysis.html
-├── images/                     # Logo, profile photo, thumbnails
-├── style.css
-└── script.js
-```
+
+## Notable Engineering Decisions
+
+- **Language‑scoped folder architecture** for clean separation of content  
+- **Static components** (`header.html`, `footer.html`) loaded via `fetch` for maintainability  
+- **Relative and absolute path strategy** optimized for static hosting 
+- **Safe DOM manipulation** (no `innerHTML` for search highlighting)  
+- **Accessible UI patterns** (ARIA roles, keyboard navigation, reduced‑motion considerations)
+- Parallel content structure for ES / EN / IT to ensure maintainability
 
 
 ## Tech Stack
 
-- HTML5 (semantic + accessibility)
-- CSS3 (Flexbox, Grid, clamp(), transitions)
-- Vanilla JavaScript (ES6+, DOM manipulation, events, fetch)
-- Hosted on Hostinger with custom domain
+- HTML5 (semantic structure, accessibility)
+- CSS3 (Grid, Flexbox, transitions, fluid typography)
+- Vanilla JavaScript (DOM, events, fetch, dynamic components)
+- Static hosting on Hostinger
 
 
 ## How to Run Locally
@@ -65,7 +121,7 @@ emilio-pattini-portfolio/
    ```bash
    cd personal-website
    ```
-3. Open `index.html` in any browser — no server required (fully static).
+3. Open `index.html` in the root folder to trigger automatic language detection.
 
 
 ## Contact
