@@ -33,7 +33,10 @@ All rights reserved. See LICENSE for details.
  * (Exposed globally for inline onclick handler in HTML)
  */
 function toggleMenu() {
-  document.querySelector(".nav-links").classList.toggle("active");
+  const navLinks = document.querySelector(".nav-links");
+  if (navLinks) {
+    navLinks.classList.toggle("active");
+  }
 }
 
 // ==================== DROPDOWN HANDLING ====================
@@ -107,11 +110,21 @@ function getBasePath() {
 const basePath = getBasePath();
 
 // Load header (with callbacks for listeners) and footer
-loadHTML('header', basePath + '/components/header.html', () => {
+loadHTML('header', '/components/header.html', () => {
+  console.log("Header fully loaded");
+
   attachDropdownListeners();
   attachSearchListeners();
+
+  const hamburger = document.querySelector('.hamburger');
+  if (hamburger) {
+    hamburger.addEventListener('click', toggleMenu);
+    console.log("Hamburger listener attached");
+  } else {
+    console.log("Hamburger element not found - check header.html");
+  }
 });
-loadHTML('footer', basePath + '/components/footer.html');
+loadHTML('footer', '/components/footer.html');
 
 // ==================== SLIDER / CAROUSEL ====================
 
