@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Page title - shown in browser tab and search results -->
+  <title>Contact | Emilio Nahuel Pattini</title>
+  
+  <!-- Stylesheet (relative path for subfolder) -->
+  <link rel="stylesheet" href="/style.css">
+  
+  <!-- Main JavaScript file (relative path) - defer for better loading performance -->
+  <script src="/script.js" defer></script>
+
+  <!-- Basic SEO Meta Tags -->
+  <meta name="description" content="Get in touch with Emilio Nahuel Pattini - Data Analyst & Web Developer based in Buenos Aires.">
+  <meta name="keywords" content="data analyst, web developer, data analysis, urban mobility, R, Python, SQL, Tableau, JavaScript, HTML, CSS, portfolio, Buenos Aires">
+  <meta name="author" content="Emilio Nahuel Pattini">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph (Facebook, LinkedIn, WhatsApp, etc.) -->
+  <meta property="og:title" content="Emilio Nahuel Pattini | Data Analyst & Web Developer Portfolio">
+  <meta property="og:description" content="Exploring urban data and building modern websites. Featured in mobility analysis and frontend development. Let's connect!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.emilionahuelpattini.com">
+  <meta property="og:image" content="https://www.emilionahuelpattini.com/images/portfolio-og-image.jpg">
+  <meta property="og:image:alt" content="Portfolio thumbnail of Emilio Nahuel Pattini">
+  <meta property="og:site_name" content="Emilio Nahuel Pattini Portfolio">
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Emilio Nahuel Pattini | Data & Web Portfolio">
+  <meta name="twitter:description" content="Data Analyst & Web Developer | Projects in urban mobility analysis and responsive web development">
+  <meta name="twitter:image" content="https://www.emilionahuelpattini.com/images/portfolio-og-image.jpg">
+
+  <!-- Canonical URL (prevents duplicate content issues) -->
+  <link rel="canonical" href="https://www.emilionahuelpattini.com">
+
+  <!-- Favicon (place your favicon.ico in the root) -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+  <!-- ==================== HEADER (loaded dynamically via JS) ==================== -->
+  <div id="header"></div>
+
+  <!-- ==================== CONTACT SECTION ==================== -->
+  <section class="intro">
+    <h1>Contact</h1>
+
+    <h2>Get in Touch</h2>
+    <p>
+      I’d love to connect! Whether you’re a recruiter, collaborator, or simply interested in my work, 
+      feel free to reach out through the channels below or by using the contact form.
+    </p>
+
+    <h2>Contact Information</h2>
+    <ul>
+      <li>
+        <strong>Email:</strong> 
+        <a href="mailto:contact@emilionahuelpattini.com">contact@emilionahuelpattini.com</a>
+      </li>
+      <li>
+        <strong>LinkedIn:</strong> 
+        <a href="https://www.linkedin.com/in/emilionahuelpattini" 
+           target="_blank" 
+           rel="noopener noreferrer">
+          linkedin.com/in/emilionahuelpattini
+        </a>
+      </li>
+      <li>
+        <strong>GitHub:</strong> 
+        <a href="https://github.com/ENPattini" 
+           target="_blank" 
+           rel="noopener noreferrer">
+          github.com/ENPattini
+        </a>
+      </li>
+    </ul>
+
+    <h2>Contact Form</h2>
+    
+    <!-- Professional Contact Form - submits to Formspree (third-party service) -->
+    <form action="https://formspree.io/f/mreeqrwe" 
+          method="POST" 
+          class="contact-form">
+      
+      <!-- Full Name -->
+      <label for="name">Full Name:</label><br>
+      <input type="text" 
+             id="name" 
+             name="name" 
+             required><br><br>
+
+      <!-- Email Address -->
+      <label for="email">Email Address:</label><br>
+      <input type="email" 
+             id="email" 
+             name="email" 
+             required><br><br>
+
+      <!-- Phone Number (optional) -->
+      <label for="phone">Phone Number (optional):</label><br>
+      <input type="tel" 
+             id="phone" 
+             name="phone" 
+             placeholder="+55 99 99999-9999"><br><br>
+
+      <!-- Subject -->
+      <label for="subject">Subject:</label><br>
+      <input type="text" 
+             id="subject" 
+             name="subject" 
+             required><br><br>
+
+      <!-- Message -->
+      <label for="message">Message:</label><br>
+      <textarea id="message" 
+                name="message" 
+                rows="6" 
+                required></textarea><br><br>
+
+      <!-- Hidden field for Formspree - helps identify source of submission -->
+      <input type="hidden" 
+             name="form-source" 
+             value="Portfolio Contact">
+
+      <!-- Submit Button -->
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ==================== FOOTER (loaded dynamically via JS) ==================== -->
+  <div id="footer"></div>
+
+</body>
+</html>

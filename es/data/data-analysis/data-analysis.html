@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Page title - shown in browser tab and search results -->
+  <title>Data Analysis | Emilio Nahuel Pattini</title>
+  
+  <!-- Stylesheet (relative path for subfolder) -->
+  <link rel="stylesheet" href="/style.css">
+  
+  <!-- Main JavaScript file (relative path) - defer for better loading -->
+  <script src="/script.js" defer></script>
+
+  <!-- Basic SEO Meta Tags -->
+  <meta name="description" content="Data analysis skills: R, Python, SQL, Tableau. Featured project: Ecobici 2024 Urban Mobility Analysis.">
+  <meta name="keywords" content="data analyst, web developer, data analysis, urban mobility, R, Python, SQL, Tableau, JavaScript, HTML, CSS, portfolio, Buenos Aires">
+  <meta name="author" content="Emilio Nahuel Pattini">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph (Facebook, LinkedIn, WhatsApp, etc.) -->
+  <meta property="og:title" content="Emilio Nahuel Pattini | Data Analyst & Web Developer Portfolio">
+  <meta property="og:description" content="Exploring urban data and building modern websites. Featured in mobility analysis and frontend development. Let's connect!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.emilionahuelpattini.com">
+  <meta property="og:image" content="https://www.emilionahuelpattini.com/images/portfolio-og-image.jpg">
+  <meta property="og:image:alt" content="Portfolio thumbnail of Emilio Nahuel Pattini">
+  <meta property="og:site_name" content="Emilio Nahuel Pattini Portfolio">
+
+  <!-- Twitter / X Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Emilio Nahuel Pattini | Data & Web Portfolio">
+  <meta name="twitter:description" content="Data Analyst & Web Developer | Projects in urban mobility analysis and responsive web development">
+  <meta name="twitter:image" content="https://www.emilionahuelpattini.com/images/portfolio-og-image.jpg">
+
+  <!-- Canonical URL (prevents duplicate content issues) -->
+  <link rel="canonical" href="https://www.emilionahuelpattini.com">
+
+  <!-- Favicon (place your favicon.ico in the root) -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+  <!-- ==================== HEADER (loaded dynamically via JS) ==================== -->
+  <div id="header"></div>
+
+  <!-- ==================== DATA ANALYSIS INTRODUCTION SECTION ==================== -->
+  <section class="intro">
+    <h1>Data Analysis</h1>
+
+    <h2>Overview</h2>
+    <p>
+      This page showcases my skills in analyzing urban mobility data, extracting insights, and presenting findings clearly. 
+      It highlights my ability to handle datasets, apply statistical methods, and communicate results effectively, 
+      demonstrated through projects like the Ecobici 2024 Urban Mobility Analysis.
+    </p>
+
+    <h2>Skills Highlighted</h2>
+    <ul>
+      <li><strong>Programming & Tools:</strong> R (tidyverse, lubridate, leaflet), Python (pandas, numpy, seaborn), SQL (DuckDB, MySQL, PostgreSQL, DB2)</li>
+      <li><strong>Exploratory Data Analysis:</strong> temporal, spatial, and demographic trends</li>
+      <li><strong>Data Preparation:</strong> cleaning, transformation, reproducible reporting (R Markdown)</li>
+      <li><strong>Visualization:</strong> Tableau, Power BI (basic), Matplotlib, Seaborn</li>
+      <li><strong>Analytical Methods:</strong> cohort analysis, forecasting basics, hypothesis testing</li>
+      <li><strong>Communication:</strong> business storytelling and insight presentation</li>
+    </ul>
+
+    <h2>Featured Project</h2>
+    
+    <h3>Ecobici 2024 Urban Mobility Analysis</h3>
+    <p>
+      An in-depth analysis of urban bike-sharing data to understand usage patterns, peak times, and station performance. 
+      This project involved cleaning large datasets, performing exploratory analysis, and visualizing key trends 
+      to inform urban planning decisions.
+    </p>
+    <p>
+      <a href="https://www.emilionahuelpattini.com/projects/ecobici-2024/urban-mobility-analysis.html" 
+         target="_blank" 
+         rel="noopener noreferrer">
+        View Project
+      </a>
+    </p>
+  </section>
+
+  <!-- ==================== FEATURED PROJECT SLIDER ==================== -->
+  <div class="slider">
+    <!-- Slide 1: Ecobici Project (only one featured for this page) -->
+    <div class="slide active">
+      <div class="image-area">
+        <a href="/en/data/data-analysis/projects/ecobici-2024/urban-mobility-analysis.html" target="_blank">
+          <img src="/en/data/data-analysis/projects/ecobici-2024/dashboard_thumbnail.png" 
+               alt="Ecobici 2024 Thumbnail - Urban Mobility Dashboard">
+        </a>
+      </div>
+      <p>Ecobici 2024: Urban Mobility Analysis focusing on bike-sharing usage patterns and station performance.</p>
+    </div>
+
+    <!-- Navigation Controls -->
+    <button class="prev" aria-label="Previous slide">&#10094;</button>
+    <button class="next" aria-label="Next slide">&#10095;</button>
+
+    <!-- Dots Navigation (dynamically populated by JS) -->
+    <div class="dots" role="tablist"></div>
+
+    <!-- Screen reader announcement live region -->
+    <div class="sr-announcer" aria-live="polite" aria-atomic="true" style="position:absolute; left:-9999px;"></div>
+  </div>
+
+  <!-- ==================== FOOTER (loaded dynamically via JS) ==================== -->
+  <div id="footer"></div>
+
+</body>
+</html>
