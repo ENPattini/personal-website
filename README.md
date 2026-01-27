@@ -1,6 +1,6 @@
 # Emilio Nahuel Pattini - Personal Website
 
-*Available in: 🇬🇧 English (this file) | 🇪🇸 Español → README.es.md | 🇮🇹 Italiano → README.it.md*
+*Available in: 🇬🇧 English (this file) | 🇪🇸 Español → [README.es.md](README.es.md) | 🇮🇹 Italiano → [README.it.md](README.it.md)*
 
 
 **Source code for my multilingual personal portfolio website.**  
