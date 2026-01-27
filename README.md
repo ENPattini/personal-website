@@ -1,5 +1,8 @@
 # Emilio Nahuel Pattini - Personal Website
 
+*Available in: 🇬🇧 English (this file) | 🇪🇸 Español → README.es.md | 🇮🇹 Italiano → README.it.md*
+
+
 **Source code for my multilingual personal portfolio website.**  
 
 Built entirely from scratch using HTML5, CSS3, and vanilla JavaScript, with a focus on clarity, accessibility, and long‑term maintainability.
@@ -98,7 +101,6 @@ A fallback language selector is displayed if the browser language is not support
 - **Safe DOM manipulation** (no `innerHTML` for search highlighting)  
 - **Accessible UI patterns** (ARIA roles, keyboard navigation, reduced‑motion considerations)
 - Parallel content structure for ES / EN / IT to ensure maintainability
-
 
 
 ## Tech Stack
