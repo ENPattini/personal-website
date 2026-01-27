@@ -110,21 +110,44 @@ function getBasePath() {
 const basePath = getBasePath();
 
 // Load header (with callbacks for listeners) and footer
-loadHTML('header', '/components/header.html', () => {
-  console.log("Header fully loaded");
+// Detect current language from <html lang="...">
+const lang = document.documentElement.lang || 'en';
+
+// Map language to header and footer files
+const headerMap = {
+  en: '/components/header.html',
+  es: '/components/header-es.html',
+  it: '/components/header-it.html'
+};
+
+const footerMap = {
+  en: '/components/footer.html',
+  es: '/components/footer-es.html',
+  it: '/components/footer-it.html'
+};
+
+// Load dinamic header
+loadHTML('header', headerMap[lang], () => {
+  console.log(`Header (${lang}) fully loaded`);
 
   attachDropdownListeners();
   attachSearchListeners();
+  initLanguageSelector();
 
   const hamburger = document.querySelector('.hamburger');
   if (hamburger) {
     hamburger.addEventListener('click', toggleMenu);
     console.log("Hamburger listener attached");
   } else {
-    console.log("Hamburger element not found - check header.html");
+    console.log("Hamburger element not found - check header file");
   }
 });
-loadHTML('footer', '/components/footer.html');
+
+// Load dinamic footer
+loadHTML('footer', footerMap[lang], () => {
+  console.log(`Footer (${lang}) fully loaded`);
+});
+
 
 // ==================== SLIDER / CAROUSEL ====================
 
@@ -358,3 +381,42 @@ function attachSearchListeners() {
     }
   });
 }
+
+// ==================== LANGUAGE SELECTOR ====================
+
+function initLanguageSelector() {
+  const selector = document.getElementById('language-select');
+  if (!selector) return;
+
+  selector.addEventListener('change', (e) => {
+    const newLang = e.target.value; // 'en', 'es', 'it'
+
+    // Ruta actual
+    const currentPath = window.location.pathname;
+    const segments = currentPath.split('/').filter(Boolean);
+
+    // Reemplazar primer segmento si es idioma
+    if (segments.length > 0 && ['en','es','it'].includes(segments[0])) {
+      segments[0] = newLang;
+    } else {
+      segments.unshift(newLang);
+    }
+
+    // Construir nueva URL
+    const newPath = '/' + segments.join('/');
+
+    // Intentar cargar la nueva página
+    fetch(newPath, { method: 'HEAD' })
+      .then(res => {
+        if (res.ok) {
+          window.location.href = newPath; // existe → redirigir
+        } else {
+          window.location.href = `/${newLang}/index.html`; // fallback → index del idioma
+        }
+      })
+      .catch(() => {
+        window.location.href = `/${newLang}/index.html`; // error → fallback
+      });
+  });
+}
+
