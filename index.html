@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const userLang = navigator.language || navigator.userLanguage;
+      const langCode = userLang.substring(0,2).toLowerCase();
+
+      if (langCode === "es") {
+        window.location.href = "es/index.html";
+      } else if (langCode === "it") {
+        window.location.href = "it/index.html";
+      } else if (langCode === "en") {
+        window.location.href = "en/index.html";
+      } else {
+        // Fallback manual
+        document.getElementById("fallback").style.display = "block";
+      }
+    });
+  </script>
+</head>
+<body>
+  <p>Redirecting based on your language...</p>
+  <div id="fallback" class="fallback-container" style="display:none;">
+    <div class="fallback-box">
+        <h2>Select your language</h2>
+        <p>We couldn't detect your preferred language. Please choose one to continue.</p>
+
+      <div class="fallback-buttons">
+        <a href="en/index.html" class="lang-btn">🇬🇧 English</a>
+        <a href="es/index.html" class="lang-btn">🇪🇸 Español</a>
+        <a href="it/index.html" class="lang-btn">🇮🇹 Italiano</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
