@@ -533,17 +533,17 @@ ul {
   .search-box {
     order: 2;
     margin-left: 0.2; 
-    margin-right: 0.2rem;
+    margin-right: 0rem;
     flex: 0 0 auto;
   }
 
   .search-box input {
-    width: 35px; 
+    width: 40px; 
     padding: 0.2rem;
   }
 
   .search-box input:focus {
-    width: 70px; 
+    width: 80px; 
     margin-right: 0.2rem;
   }
 
@@ -555,43 +555,64 @@ ul {
 
   .hamburger {
     order: 3;
-    margin-left: 0.2rem;
-    margin-right: 0;
+    margin-left: 0rem;
+    margin-right: 0.1rem;
     font-size: 1.5rem; 
   }
 }
 
 @media (max-width: 400px) {
+  
   .navbar {
     width: 100%;
-    overflow: visible;
-    padding: 0.3rem 0.1rem;
-    gap: 0;
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 0.2rem;
+    box-sizing: border-box;
+    overflow: visible;
   }
 
   .logo-img {
-    transform: scale(1.8);
+    transform: scale(1.6);
     transform-origin: left;
-  }
-
-  .language-selector {
-    margin-left: 0;  
-    margin-right: 0.1rem;
-  }
-
-  .search-box {
-    margin-left: 0;   
-    margin-right: 0.1rem;
-    flex: 0 1 auto;
-  }
-
-  .hamburger {
-    margin-left: 0.2rem;   
-    margin-right: 0;
-    font-size: 1.4rem;
     flex-shrink: 0;
   }
+
+  .language-selector,
+  .search-box {
+    flex: 1 1 auto;        /* ambos comparten el espacio intermedio */
+    margin: 0 0.1rem;
+    min-width: 0;          /* permite que se encojan sin empujar */
+    flex-shrink: 1;
+    transition: width 0.3s ease;   /* animación suave */
+  }
+
+  #language-select {
+    font-size: 0.65rem;
+    padding: 0.1rem 0.25rem;
+  }
+
+  .search-box input {
+    width: 40px;           /* ocupa el espacio disponible */
+    transition: width 0.3s ease;
+  }
+
+  .search-box input:focus {
+    width: 90px;                   /* expandido al enfocar */
+    margin-right: 0.2rem;
+  }
+
+
+  .hamburger {
+    flex-shrink: 0;
+    margin: 0;
+    font-size: 1.4rem;
+  }
+
+
 }
+
 
 
