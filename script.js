@@ -267,10 +267,23 @@ function attachSearchListeners() {
 
   // Static list of searchable works/projects
   const works = [
-    { title: "Data Analysis - Urban Mobility Ecobici 2024 - R & Tableau", url: "../projects/ecobici-2024/urban-mobility-analysis.html" },
-    { title: "Data Analysis - Projects", url: "../data-analysis/data-analysis.html" },
-    { title: "Web Development - Projects", url: "../web-development/web-development.html" },
-    { title: "Web Development - JavaScript CSS HTML", url: "../index.html" }
+    { title: "Data Analysis - Urban Mobility Ecobici 2024 - R & Tableau", url: "/en/data/data-analysis/projects/ecobici-2024/urban-mobility-analysis.html", lang: "en" },
+    { title: "Análisis de Datos - Movilidad Urbana Ecobici 2024 - R y Tableau", url: "/es/data/data-analysis/projects/ecobici-2024/urban-mobility-analysis.html", lang: "es" },
+    { title: "Analisi Dati - Mobilità Urbana Ecobici 2024 - R e Tableau", url: "/it/data/data-analysis/projects/ecobici-2024/urban-mobility-analysis.html", lang: "it" },
+
+    { title: "Web Development - JavaScript CSS HTML", url: "/en/index.html", lang: "en" },
+    { title: "Desarrollo Web - JavaScript CSS HTML", url: "/es/index.html", lang: "es" },
+    { title: "Sviluppo Web - JavaScript CSS HTML", url: "/it/index.html", lang: "it" },
+
+
+    { title: "Data Analysis - Projects", url: "/en/data/data-analysis/data-analysis.html", lang: "en"  },
+    { title: "Análisis de Datos - Proyectos", url: "/es/data/data-analysis/data-analysis.html", lang: "es"  },
+    { title: "Analisi Dati - Progetti", url: "/it/data/data-analysis/data-analysis.html", lang: "it"  },
+
+
+    { title: "Web Development - Projects", url: "/en/development/web-development/web-development.html", lang: "en" },
+    { title: "Desarrollo Web - Proyectos", url: "/es/development/web-development/web-development.html", lang: "es" },
+    { title: "Sviluppo Web - Progetti", url: "/it/development/web-development/web-development.html", lang: "it" },    
   ];
 
   /**
@@ -305,6 +318,8 @@ function attachSearchListeners() {
   /**
    * Performs the search and renders results
    */
+  const currentLang = document.documentElement.lang || "en";
+
   function performSearch() {
     const query = searchInput.value.trim().toLowerCase();
     resultsList.innerHTML = ""; // Safe clear
@@ -318,9 +333,9 @@ function attachSearchListeners() {
     searchInput.classList.add("expanded");
     resultsList.style.display = 'block';
 
-    const matches = works.filter(work =>
-      work.title.toLowerCase().includes(query)
-    );
+    const matches = works
+      .filter(work => work.lang === currentLang) // only projects in current language
+      .filter(work => work.title.toLowerCase().includes(query));
 
     if (matches.length === 0) {
       const li = document.createElement("li");
