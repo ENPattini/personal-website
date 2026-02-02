@@ -1,5 +1,12 @@
 # Emilio Nahuel Pattini - Sito Web Personale
 
+*Disponibile in: 🇬🇧 English → [README.md](README.md) | 🇪🇸 Español → [README.es.md](README.es.md) | 🇮🇹 Italiano (questo file)*
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 Codice sorgente del mio sito web personale multilingue.
 
 Costruito completamente da zero con HTML5, CSS3 e JavaScript puro, con un focus su chiarezza, accessibilità e mantenibilità a lungo termine.
