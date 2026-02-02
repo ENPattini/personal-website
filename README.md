@@ -2,6 +2,10 @@
 
 *Available in: 🇬🇧 English (this file) | 🇪🇸 Español → [README.es.md](README.es.md) | 🇮🇹 Italiano → [README.it.md](README.it.md)*
 
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 **Source code for my multilingual personal portfolio website.**  
 
