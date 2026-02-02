@@ -54,81 +54,110 @@
   <section class="intro">
     <h1>Bienvenido a Mi Portafolio</h1>
 
-    <h2>Resumen</h2>
-    <p>
-      Soy <strong>Emilio Nahuel Pattini</strong>, Analista de Datos y Desarrollador Web apasionado por 
-      transformar conjuntos de datos complejos en información útil y construir sitios web responsivos y accesibles. 
-      Este portafolio muestra mi doble experiencia en <em>análisis de datos</em> y <em>desarrollo web</em>, 
-      demostrada en proyectos como el Análisis de Movilidad Urbana Ecobici 2024 y este mismo sitio web.
-    </p>
+      <h2>Visión General</h2>
+        <p>
+          Soy <strong>Emilio Nahuel Pattini</strong>, Analista de Datos y Desarrollador Web apasionado por 
+          transformar conjuntos de datos complejos en insights accionables de negocio y crear sitios web responsivos y accesibles.
+        </p>
+        <p>
+          Este portfolio muestra mi doble expertise a través de proyectos como el <strong>Análisis de E-Commerce Brasileño – Olist</strong> 
+          (segmentación RFM, retención de cohorts, pronóstico de ingresos con Prophet, dashboard interactivo en Power BI) 
+          y el Análisis de Movilidad Urbana Ecobici 2024, así como este mismo sitio web.
+        </p>
 
-    <h2>Habilidades Destacadas</h2>
-    <ul>
-      <li><strong>Análisis de Datos:</strong> R, Python, SQL, Tableau, visualización geoespacial, fundamentos de pronóstico</li>
-      <li><strong>Desarrollo Web:</strong> HTML5, CSS3, JavaScript (componentes interactivos, diseño responsivo), WordPress</li>
-      <li><strong>Visualización & Reportes:</strong> Tableau, Power BI, Matplotlib, Seaborn, R Markdown</li>
-      <li><strong>Flujo de trabajo & Comunicación:</strong> limpieza de datos, reportes reproducibles, narración empresarial</li>
-      <li><strong>Idiomas:</strong> Español (Nativo), Inglés (Fluido), Italiano (Intermedio), Portugués (Básico)</li>
-    </ul>
+      <!-- ==================== FEATURED PROJECT SLIDER ==================== -->
+      <div class="slider">
+        <!-- Slide 1: Olist Analysis (only one featured for this page) -->
+        <div class="slide active">
+          <div class="image-area">
+            <a href="data/data-analysis/projects/olist-report/olist-ecommerce-analysis.html" target="_blank">
+              <img src="data/data-analysis/projects/olist-report/images/screenshots/olist_overview_page.png" alt="Olist Brazilian E-Commerce Analysis - Dashboard">
+            </a>
+          </div>
+          <p>Análisis de E-Commerce Brasileño Olist: segmentación RFM, retención de cohorts, pronóstico con Prophet y dashboard interactivo en Power BI con insights accionables.</p>
+        </div>
+        <!-- Slide 2: Ecobici Analysis -->
+        <div class="slide">
+          <div class="image-area">
+            <a href="data/data-analysis/projects/ecobici-2024/urban-mobility-analysis.html" target="_blank">
+              <img src="data/data-analysis/projects/ecobici-2024/dashboard_thumbnail.png" alt="Ecobici 2024 Thumbnail - Urban Mobility Dashboard">
+            </a>
+          </div>
+          <p>Ecobici 2024: Análisis de Movilidad Urbana centrado en patrones de uso del bike-sharing y rendimiento de estaciones.</p>
+        </div>
+        <!-- Slide 3: Sitio Web Portafolio -->
+        <div class="slide">
+          <div class="image-area">
+            <a href="/es/index.html" target="_blank">
+              <img src="/images/thumbnails/personal_website_thumbnail.jpg" alt="Miniatura del Sitio Web de Portafolio Personal">
+            </a>
+          </div>
+          <p>Sitio Web de Portafolio Personal: diseño responsivo, componentes interactivos y branding pulido.</p>
+        </div>
 
-    <h2>Proyectos Destacados</h2>
-    
-    <h3>Ecobici 2024 - Análisis de Movilidad Urbana</h3>
-    <p>
-      Un análisis detallado de los datos de bicicletas compartidas en Buenos Aires, revelando patrones de uso, horarios pico 
-      y rendimiento de estaciones. Incluye tableros interactivos y visualizaciones geoespaciales.
-    </p>
-    <p>
-      <a href="data/data-analysis/projects/ecobici-2024/urban-mobility-analysis.html" target="_blank" rel="noopener noreferrer">
-        Ver Proyecto
-      </a>
-    </p>
+        <!-- Navigation Controls -->
+        <button class="prev" aria-label="Slide anterior">&#10094;</button>
+        <button class="next" aria-label="Slide siguiente">&#10095;</button>
 
-    <h3>Sitio Web de Portafolio Personal</h3>
-    <p>
-      Un portafolio responsivo y accesible construido con HTML, CSS y JavaScript, con un 
-      carrusel interactivo y un diseño profesional y claro. Este proyecto demuestra mis habilidades en 
-      desarrollo web y branding.
-    </p>
-    <p>
-      <a href="/es/index.html" target="_blank" rel="noopener noreferrer">
-        Ver Proyecto
-      </a>
-    </p>
+        <!-- Dots Navigation (dynamically populated by JS) -->
+        <div class="dots" role="tablist"></div>
+        <!-- Screen reader announcement live region -->
+        <div class="sr-announcer" aria-live="polite" aria-atomic="true" style="position:absolute; left:-9999px;"></div>
+      </div>
+      <!-- =================================================================== -->
+
+      <h2>Habilidades Destacadas</h2>
+        <ul>
+          <li><strong>Análisis de Datos:</strong> Python (pandas, numpy, seaborn, plotly, prophet), R (tidyverse, lubridate, leaflet), SQL (DuckDB, MySQL, PostgreSQL, DB2), segmentación RFM, análisis de cohorts, forecasting (Prophet), métodos estadísticos</li>
+          <li><strong>Desarrollo Web:</strong> HTML5, CSS3, JavaScript (componentes interactivos, diseño responsivo), WordPress, contenido multilingüe (EN/ES/IT)</li>
+          <li><strong>Visualización y Dashboarding:</strong> Power BI (KPIs, Gauges, scatter, heatmap, bubble maps), Plotly (gráficos interactivos), Tableau, Matplotlib, Seaborn, R Markdown</li>
+          <li><strong>Flujo de Trabajo y Comunicación:</strong> limpieza y feature engineering de datos, reportes reproducibles (Jupyter, RMarkdown), storytelling de negocio, recomendaciones accionables</li>
+          <li><strong>Idiomas:</strong> Español (Nativo), Inglés (Fluido), Italiano (Intermedio), Portugués (Básico)</li>
+        </ul>
+
+      <h2>Proyectos Destacados</h2>
+      
+        <h3>Análisis de E-Commerce Brasileño – Olist</h3>
+          <p>
+            Análisis end-to-end completo: segmentación RFM, retención de cohorts, pronóstico de ingresos con Prophet, dashboard interactivo en Power BI.  
+            Resultado clave: identificado 97 % de clientes one-time y enorme oportunidad de retención.
+          </p>
+          <a href="data/data-analysis/projects/olist-report/olist-ecommerce-analysis.html" target="_blank">Ver Online</a> | 
+          <a href="https://github.com/ENPattini/olist-ecommerce-analysis" target="_blank">Repositorio GitHub</a>
+
+        <h3>Análisis de Movilidad Urbana Ecobici 2024</h3>
+          <p>
+            Análisis en profundidad de datos de bike-sharing urbano para entender patrones de uso, horarios pico y performance de estaciones.  
+            El proyecto involucró limpieza de datasets grandes, análisis exploratorio y visualización de tendencias clave para informar decisiones de planificación urbana.
+          </p>
+          <a href="data/data-analysis/projects/ecobici-2024/urban-mobility-analysis.html" target="_blank" rel="noopener noreferrer">Ver Online</a> | 
+          <a href="https://github.com/ENPattini/ecobici-2024-analysis" target="_blank">Repositorio GitHub</a>
+
+        <!-- ==================== Embedded dashboard ==================== --> 
+        <section id="powerbi-dashboard">
+          <h3>Dashboard Interactivo en Power BI</h3>
+          <p>
+            Dashboard interactivo completo con KPIs globales, pronóstico de ingresos, heatmap de cohorts, comparación de segmentos RFM, mapa de ingresos por estado y top categorías.
+            Filtra por estado, categoría o segmento para explorar los insights de forma dinámica.
+          </p>
+
+          <div style="max-width: 1200px; margin: 0 auto; padding: 20px 0;">
+            <iframe 
+              title="Olist Analytics Dashboard" 
+              width="100%" 
+              height="600px" 
+              src="https://app.powerbi.com/view?r=eyJrIjoiNTFjYTAyYTctYTU0YS00ZWIzLTljZTEtMDQ0MjA4MzljODI3IiwidCI6IjZiNTQyOWEzLTM3MjItNDA3Yy04NmQyLWY4MGViNjEwMjU4MSIsImMiOjR9" 
+              frameborder="0" 
+              allowFullScreen="true"
+              style="display: block; margin: 0 auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+            </iframe>
+          </div>
+
+          <p style="text-align: center; font-size: 0.9em; color: #666;">
+            <a href="https://app.powerbi.com/view?r=eyJrIjoiNTFjYTAyYTctYTU0YS00ZWIzLTljZTEtMDQ0MjA4MzljODI3IiwidCI6IjZiNTQyOWEzLTM3MjItNDA3Yy04NmQyLWY4MGViNjEwMjU4MSIsImMiOjR9" target="_blank">Abrir dashboard en nueva pestaña (Power BI Service)</a>
+          </p>
+        </section>
   </section>
-
-  <!-- ==================== SLIDER DE PROYECTOS DESTACADOS ==================== -->
-  <div class="slider">
-    <!-- Slide 1: Proyecto Ecobici -->
-    <div class="slide active">
-      <div class="image-area">
-        <a href="data/data-analysis/projects/ecobici-2024/urban-mobility-analysis.html" target="_blank">
-          <img src="data/data-analysis/projects/ecobici-2024/dashboard_thumbnail.png" alt="Miniatura Ecobici 2024 - Tablero de Movilidad Urbana">
-        </a>
-      </div>
-      <p>Ecobici 2024: Análisis de Movilidad Urbana enfocado en patrones de uso y rendimiento de estaciones.</p>
-    </div>
-
-    <!-- Slide 2: Sitio Web Portafolio -->
-    <div class="slide">
-      <div class="image-area">
-        <a href="/es/index.html" target="_blank">
-          <img src="/images/thumbnails/personal_website_thumbnail.jpg" alt="Miniatura del Sitio Web de Portafolio Personal">
-        </a>
-      </div>
-      <p>Sitio Web de Portafolio Personal: diseño responsivo, componentes interactivos y branding pulido.</p>
-    </div>
-
-    <!-- Controles de navegación -->
-    <button class="prev" aria-label="Slide anterior">&#10094;</button>
-    <button class="next" aria-label="Slide siguiente">&#10095;</button>
-
-    <!-- Navegación por puntos -->
-    <div class="dots" role="tablist"></div>
-
-    <!-- Región de anuncio para lectores de pantalla -->
-    <div class="sr-announcer" aria-live="polite" aria-atomic="true" style="position:absolute; left:-9999px;"></div>
-  </div>
 
   <!-- ==================== FOOTER (cargado dinámicamente vía JS) ==================== -->
   <div id="footer"></div>
