@@ -271,6 +271,10 @@ function attachSearchListeners() {
     { title: "Análisis de Datos - Movilidad Urbana Ecobici 2024 - R y Tableau", url: "/es/data/data-analysis/projects/ecobici-2024/urban-mobility-analysis.html", lang: "es" },
     { title: "Analisi Dati - Mobilità Urbana Ecobici 2024 - R e Tableau", url: "/it/data/data-analysis/projects/ecobici-2024/urban-mobility-analysis.html", lang: "it" },
 
+    { title: "Data Analysis - Olist Brazilian E-Commerce - Python & Power BI", url: "/en/data/data-analysis/projects/olist-report/olist-ecommerce-analysis.html", lang: "en" },
+    { title: "Análisis de Datos - E-Commerce Brasileño Olist - Python y Power BI", url: "/es/data/data-analysis/projects/olist-report/olist-ecommerce-analysis.html", lang: "es" },
+    { title: "Analisi Dati - E-Commerce Brasiliano Olist -  Python e Power BI", url: "/it/data/data-analysis/projects/olist-report/olist-ecommerce-analysis.html", lang: "it" },
+
     { title: "Web Development - JavaScript CSS HTML", url: "/en/index.html", lang: "en" },
     { title: "Desarrollo Web - JavaScript CSS HTML", url: "/es/index.html", lang: "es" },
     { title: "Sviluppo Web - JavaScript CSS HTML", url: "/it/index.html", lang: "it" },
