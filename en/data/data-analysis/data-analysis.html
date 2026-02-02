@@ -53,64 +53,105 @@
   <!-- ==================== DATA ANALYSIS INTRODUCTION SECTION ==================== -->
   <section class="intro">
     <h1>Data Analysis</h1>
+    
+      <h2>Overview</h2>
+        <p>This page showcases my skills in analyzing business and urban mobility data, extracting actionable insights, and presenting findings clearly.</p>
+        <p> 
+          It highlights my ability to handle real-world datasets, apply statistical and ML methods, build interactive dashboards, and communicate results effectively.  
+          Demonstrated through projects like <strong>Olist Brazilian E-Commerce Analytics</strong> (RFM, cohorts, forecasting, Power BI) and Ecobici 2024 Urban Mobility Analysis.
+        </p>
+    <!-- ==================== FEATURED PROJECT SLIDER ==================== -->
+    <div class="slider">
+      <!-- Slide 1: Olist Analysis (only one featured for this page) -->
+      <div class="slide active">
+        <div class="image-area">
+          <a href="projects/olist-report/olist-ecommerce-analysis.html" target="_blank">
+            <img src="projects/olist-report/images/screenshots/olist_overview_page.png" alt="Olist Brazilian E-Commerce Analysis - Dashboard">
+          </a>
+        </div>
+        <p>Olist Brazilian E-Commerce Analysis: RFM segmentation, cohort retention, Prophet forecasting, and interactive Power BI dashboard with actionable business insights.</p>
+      </div>
+      <!-- Slide 2: Ecobici Analysis -->
+      <div class="slide">
+        <div class="image-area">
+          <a href="projects/ecobici-2024/urban-mobility-analysis.html" target="_blank">
+            <img src="projects/ecobici-2024/dashboard_thumbnail.png" alt="Ecobici 2024 Thumbnail - Urban Mobility Dashboard">
+          </a>
+        </div>
+        <p>Ecobici 2024: Urban Mobility Analysis focusing on bike-sharing usage patterns and station performance.</p>
+      </div>
 
-    <h2>Overview</h2>
-    <p>
-      This page showcases my skills in analyzing urban mobility data, extracting insights, and presenting findings clearly. 
-      It highlights my ability to handle datasets, apply statistical methods, and communicate results effectively, 
-      demonstrated through projects like the Ecobici 2024 Urban Mobility Analysis.
-    </p>
+      <!-- Navigation Controls -->
+      <button class="prev" aria-label="Previous slide">&#10094;</button>
+      <button class="next" aria-label="Next slide">&#10095;</button>
+
+      <!-- Dots Navigation (dynamically populated by JS) -->
+      <div class="dots" role="tablist"></div>
+
+      <!-- Screen reader announcement live region -->
+      <div class="sr-announcer" aria-live="polite" aria-atomic="true" style="position:absolute; left:-9999px;"></div>
+    </div>
+    <!-- =================================================================== -->
 
     <h2>Skills Highlighted</h2>
     <ul>
-      <li><strong>Programming & Tools:</strong> R (tidyverse, lubridate, leaflet), Python (pandas, numpy, seaborn), SQL (DuckDB, MySQL, PostgreSQL, DB2)</li>
-      <li><strong>Exploratory Data Analysis:</strong> temporal, spatial, and demographic trends</li>
-      <li><strong>Data Preparation:</strong> cleaning, transformation, reproducible reporting (R Markdown)</li>
-      <li><strong>Visualization:</strong> Tableau, Power BI (basic), Matplotlib, Seaborn</li>
-      <li><strong>Analytical Methods:</strong> cohort analysis, forecasting basics, hypothesis testing</li>
-      <li><strong>Communication:</strong> business storytelling and insight presentation</li>
+      <li><strong>Programming & Tools:</strong> Python (pandas, numpy, seaborn, plotly, prophet), R (tidyverse, lubridate, leaflet), SQL (DuckDB, MySQL, PostgreSQL, DB2)</li>
+      <li><strong>Exploratory Data Analysis:</strong> temporal, spatial, demographic, and customer behavior trends (RFM, cohorts)</li>
+      <li><strong>Data Preparation & Feature Engineering:</strong> cleaning, transformation, business logic features (delivery deltas, delay metrics), reproducible workflows (Jupyter, RMarkdown)</li>
+      <li><strong>Customer & Business Segmentation:</strong> RFM scoring, segment visualization & actionable recommendations (retention, upselling, win-back)</li>
+      <li><strong>Forecasting & Time Series:</strong> Prophet for revenue prediction, seasonality detection, uncertainty bounds, growth scenarios</li>
+      <li><strong>Visualization & Dashboarding:</strong> Tableau, Plotly (interactive plots), Power BI (KPIs, Gauges, scatter, heatmap, bubble maps), Matplotlib, Seaborn</li>
+      <li><strong>Analytical Methods:</strong> cohort retention analysis, delivery performance by region, hypothesis testing, basic ML</li>
+      <li><strong>Communication & Storytelling:</strong> business storytelling, actionable recommendations, multilingual reporting (EN/ES/IT) and insight presentation</li>
     </ul>
 
-    <h2>Featured Project</h2>
+    <h2>Featured Projects</h2>
     
-    <h3>Ecobici 2024 Urban Mobility Analysis</h3>
-    <p>
-      An in-depth analysis of urban bike-sharing data to understand usage patterns, peak times, and station performance. 
-      This project involved cleaning large datasets, performing exploratory analysis, and visualizing key trends 
-      to inform urban planning decisions.
-    </p>
-    <p>
-      <a href="projects/ecobici-2024/urban-mobility-analysis.html" 
-         target="_blank" 
-         rel="noopener noreferrer">
-        View Project
-      </a>
-    </p>
+      <h3>Olist Brazilian E-Commerce Analysis</h3>
+        <p>
+          Full end-to-end analysis: RFM segmentation, cohort retention, revenue forecasting with Prophet, interactive Power BI dashboard.  
+          Key result: identified 97% one-time buyers and massive retention opportunity.
+        </p>
+        <a href="projects/olist-report/olist-ecommerce-analysis.html" target="_blank">View Online</a> | 
+        <a href="https://github.com/ENPattini/olist-ecommerce-analysis" target="_blank">GitHub Repo</a> 
+
+      <h3>Ecobici 2024 Urban Mobility Analysis</h3>
+        <p>
+          An in-depth analysis of urban bike-sharing data to understand usage patterns, peak times, and station performance. 
+          This project involved cleaning large datasets, performing exploratory analysis, and visualizing key trends 
+          to inform urban planning decisions.
+        </p>
+        
+        <a href="projects/ecobici-2024/urban-mobility-analysis.html" target="_blank" rel="noopener noreferrer"> View Online </a> |
+        <a href="https://github.com/ENPattini/ecobici-2024-analysis" target="_blank">GitHub Repo</a> 
+        
+      <!-- ==================== Embedded dashboard ==================== --> 
+      <section id="powerbi-dashboard">
+        <h3>Interactive Power BI Dashboard</h3>
+        <p>
+          Full interactive dashboard with global KPIs, revenue forecast, cohort heatmap, RFM segment comparison, state-level revenue map, and top categories.  
+          Filter by state, category, or segment to explore insights dynamically.
+        </p>
+
+        <div style="max-width: 1200px; margin: 0 auto; padding: 20px 0;">
+          <iframe 
+            title="Olist Analytics Dashboard" 
+            width="100%" 
+            height="600px" 
+            src="https://app.powerbi.com/view?r=eyJrIjoiNTFjYTAyYTctYTU0YS00ZWIzLTljZTEtMDQ0MjA4MzljODI3IiwidCI6IjZiNTQyOWEzLTM3MjItNDA3Yy04NmQyLWY4MGViNjEwMjU4MSIsImMiOjR9" 
+            frameborder="0" 
+            allowFullScreen="true"
+            style="display: block; margin: 0 auto; border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+          </iframe>
+        </div>
+
+        <p style="text-align: center; font-size: 0.9em; color: #666;">
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiNTFjYTAyYTctYTU0YS00ZWIzLTljZTEtMDQ0MjA4MzljODI3IiwidCI6IjZiNTQyOWEzLTM3MjItNDA3Yy04NmQyLWY4MGViNjEwMjU4MSIsImMiOjR9" target="_blank">Open dashboard in new tab (Power BI Service)</a>
+        </p>
+      </section>
+
+
   </section>
-
-  <!-- ==================== FEATURED PROJECT SLIDER ==================== -->
-  <div class="slider">
-    <!-- Slide 1: Ecobici Project (only one featured for this page) -->
-    <div class="slide active">
-      <div class="image-area">
-        <a href="projects/ecobici-2024/urban-mobility-analysis.html" target="_blank">
-          <img src="projects/ecobici-2024/dashboard_thumbnail.png" 
-               alt="Ecobici 2024 Thumbnail - Urban Mobility Dashboard">
-        </a>
-      </div>
-      <p>Ecobici 2024: Urban Mobility Analysis focusing on bike-sharing usage patterns and station performance.</p>
-    </div>
-
-    <!-- Navigation Controls -->
-    <button class="prev" aria-label="Previous slide">&#10094;</button>
-    <button class="next" aria-label="Next slide">&#10095;</button>
-
-    <!-- Dots Navigation (dynamically populated by JS) -->
-    <div class="dots" role="tablist"></div>
-
-    <!-- Screen reader announcement live region -->
-    <div class="sr-announcer" aria-live="polite" aria-atomic="true" style="position:absolute; left:-9999px;"></div>
-  </div>
 
   <!-- ==================== FOOTER (loaded dynamically via JS) ==================== -->
   <div id="footer"></div>
