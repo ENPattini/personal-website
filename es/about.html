@@ -3,74 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre mí | Emilio Nahuel Pattini</title>
+  <!-- Page title - shown in browser tab and search results -->
+  <title>Sobre Mí | Emilio Nahuel Pattini</title>
   
+  <!-- Stylesheet (relative path for subfolder) -->
   <link rel="stylesheet" href="/style.css">
+  
+  <!-- Main JavaScript file (relative path) - defer for better loading performance -->
   <script src="/script.js" defer></script>
 
-  <meta name="description" content="Emilio Nahuel Pattini - Analista de Datos & Desarrollador Web apasionado por la movilidad urbana y el diseño moderno.">
-  <meta name="keywords" content="analista de datos, desarrollador web, análisis de datos, movilidad urbana, R, Python, SQL, Tableau, JavaScript, HTML, CSS, portafolio, Buenos Aires">
+<!-- Basic SEO Meta Tags -->
+  <meta name="description" content="Emilio Nahuel Pattini - Analista de Datos y Desarrollador Web especializado en SQL, Python, Machine Learning y dashboards interactivos. Apasionado por la salud pública y la movilidad urbana.">
+  <meta name="keywords" content="analista de datos, desarrollador web, sql, python, r, streamlit, duckdb, clustering, machine learning, salud pública, movilidad urbana, portafolio, Buenos Aires">
   <meta name="author" content="Emilio Nahuel Pattini">
   <meta name="robots" content="index, follow">
 
-  <meta property="og:title" content="Emilio Nahuel Pattini | Portafolio Analista de Datos & Desarrollador Web">
-  <meta property="og:description" content="Explorando datos urbanos y creando sitios web modernos. Destacado en análisis de movilidad y desarrollo frontend. ¡Conectemos!">
+  <!-- Open Graph (Facebook, LinkedIn, WhatsApp, etc.) -->
+  <meta property="og:title" content="Emilio Nahuel Pattini | Portafolio Analista de Datos y Desarrollador Web">
+  <meta property="og:description" content="Analista de Datos y Desarrollador Web con sólidas habilidades en SQL y Python. Apasionado por transformar datos en insights accionables y construir herramientas interactivas.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.emilionahuelpattini.com">
   <meta property="og:image" content="https://www.emilionahuelpattini.com/images/portfolio-og-image.jpg">
   <meta property="og:image:alt" content="Miniatura del portafolio de Emilio Nahuel Pattini">
   <meta property="og:site_name" content="Portafolio de Emilio Nahuel Pattini">
 
+  <!-- Twitter / X Cards -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Emilio Nahuel Pattini | Portafolio Datos & Web">
-  <meta name="twitter:description" content="Analista de Datos & Desarrollador Web | Proyectos en análisis de movilidad urbana y desarrollo web responsivo">
+  <meta name="twitter:title" content="Emilio Nahuel Pattini | Portafolio Datos e Web">
+  <meta name="twitter:description" content="Analista de Datos & Desarrollador Web | SQL, Python, Streamlit, Clustering e Insights en Salud Pública">
   <meta name="twitter:image" content="https://www.emilionahuelpattini.com/images/portfolio-og-image.jpg">
 
+  <!-- Canonical URL (prevents duplicate content issues) -->
   <link rel="canonical" href="https://www.emilionahuelpattini.com/es/about.html">
 
   <link rel="alternate" hreflang="en" href="https://www.emilionahuelpattini.com/en/about.html">
   <link rel="alternate" hreflang="es" href="https://www.emilionahuelpattini.com/es/about.html">
   <link rel="alternate" hreflang="it" href="https://www.emilionahuelpattini.com/it/about.html">
 
+  <!-- Favicon  -->
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
+
+  <!-- ==================== HEADER (loaded dynamically via JS) ==================== -->
   <div id="header"></div>
 
+  <!-- ==================== ABOUT ME SECTION ==================== -->
   <section class="intro">
-    <h1>Sobre mí</h1>
+    <h1>Sobre Mí</h1>
 
+    <!-- Profile Photo -->
     <div class="profile-photo">
-      <img src="/images/profile.jpg" alt="Foto de perfil de Emilio Nahuel Pattini">
+      <img src="/images/profile.jpg" 
+           alt="Foto de perfil de Emilio Nahuel Pattini">
     </div>
 
       <h2>Quién Soy</h2>
         <p>
           Soy <strong>Emilio Nahuel Pattini</strong>, Analista de Datos y Desarrollador Web apasionado por 
-          transformar conjuntos de datos complejos en insights accionables de negocio y crear sitios web responsivos y accesibles.  
-          Mi trabajo abarca <em>analítica de e-commerce</em>, <em>movilidad urbana y sostenibilidad</em>, y <em>diseño web moderno</em>, 
-          combinando profundidad analítica con interfaces limpias y amigables para el usuario.
+          transformar conjuntos de datos complejos en insights claros y accionables, y construir aplicaciones web modernas y accesibles. 
+          Mi trabajo abarca <em>analítica de e-commerce</em>, <em>salud pública & movilidad urbana</em>, y <em>diseño web moderno</em>, 
+          combinando profundidad analítica con interfaces limpias y fáciles de usar.
         </p>
 
       <h2>Enfoque Profesional</h2>
         <p>
-          Mi expertise abarca <strong>análisis de datos</strong> (Python, R, SQL, Power BI, Tableau, Prophet) y 
+          Mi experiencia cubre <strong>análisis de datos</strong> (Python, R, SQL, Power BI, Tableau, Streamlit, Prophet, clustering, forecasting) y 
           <strong>desarrollo web</strong> (HTML5, CSS3, JavaScript, WordPress, contenido multilingüe).  
-          Disfruto creando soluciones técnicamente sólidas, visualmente pulidas y genuinamente útiles — ya sea pronosticando ingresos, segmentando clientes o diseñando experiencias digitales inclusivas.
+          Disfruto creando soluciones técnicamente sólidas, visualmente pulidas y realmente útiles — ya sea pronosticando ingresos, segmentando clientes, analizando riesgos de salud pública o diseñando experiencias digitales inclusivas.
         </p>
 
-      <h2>Enfoque y Valores</h2>
-        <ul>
-          <li><strong>Claridad:</strong> convertir datos en historias claras y diseños en experiencias intuitivas.</li>
-          <li><strong>Accesibilidad:</strong> construir herramientas inclusivas con estructura semántica y soporte para lectores de pantalla.</li>
-          <li><strong>Impacto:</strong> entregar insights accionables para el crecimiento del negocio y soluciones urbanas sostenibles.</li>
-          <li><strong>Multilingüe y Global:</strong> crear contenido y reportes en inglés, español e italiano para un alcance más amplio.</li>
-        </ul>
+      <h2>Enfoque & Valores</h2>
+      <ul>
+        <li><strong>Excelencia Técnica:</strong> Fuerte enfoque en SQL limpio, análisis reproducible y modelado robusto.</li>
+        <li><strong>Claridad & Storytelling:</strong> Transformar datos complejos en insights claros y visualizaciones comprensibles.</li>
+        <li><strong>Orientado al Impacto:</strong> Entregar recomendaciones accionables que apoyen mejores decisiones en negocios y salud pública.</li>
+        <li><strong>Multilingüe:</strong> Fluido en inglés, español e italiano — cómodo presentando reportes y presentaciones en varios idiomas.</li>
+        <li><strong>Aprendizaje Continuo:</strong> Siempre ampliando mi toolkit, con foco reciente en SQL avanzado, clustering y dashboards listos para producción.</li>
+      </ul>
 
     <h2>Educación & Certificaciones</h2>
     <p>
-      Actualmente cursando una <strong>Licenciatura en Ciencias de la Computación</strong> en Goldsmiths, University of London (2022–2027).  
+      Actualmente cursando una <strong>Licenciatura en Ciencias de la Computación</strong> en Goldsmiths, University of London (2022-2027).  
       Certificado en <strong>Google Data Analytics</strong>, <strong>Programación en Python</strong> y 
       <strong>Ingeniería de Data Warehouse</strong>.
     </p>
@@ -81,6 +96,8 @@
     </p>
   </section>
 
+  <!-- ==================== FOOTER (loaded dynamically via JS) ==================== -->
   <div id="footer"></div>
+
 </body>
 </html>

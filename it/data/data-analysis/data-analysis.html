@@ -3,127 +3,160 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Analisi Dati | Emilio Nahuel Pattini</title>
+  <!-- Page title - shown in browser tab and search results -->
+  <title>Analisi dei Dati | Emilio Nahuel Pattini</title>
   
+  <!-- Stylesheet (relative path for subfolder) -->
   <link rel="stylesheet" href="/style.css">
+  
+  <!-- Main JavaScript file (relative path) - defer for better loading -->
   <script src="/script.js" defer></script>
 
-  <!-- Meta Tag SEO di base -->
-  <meta name="description" content="Competenze di analisi dati: R, Python, SQL, Tableau. Progetto in evidenza: Analisi Mobilità Urbana Ecobici 2024.">
-  <meta name="keywords" content="analista dati, sviluppatore web, analisi dati, mobilità urbana, R, Python, SQL, Tableau, JavaScript, HTML, CSS, portfolio, Buenos Aires">
+  <!-- Basic SEO Meta Tags -->
+  <meta name="description" content="Portfolio di Analisi dei Dati - Emilio Nahuel Pattini. Progetti in SQL, R, Python, Machine Learning, Clustering e Dashboard Interattivi.">
+  <meta name="keywords" content="data analyst, sql, python, r, tableau, powerbi, streamlit, duckdb, clustering, machine learning, sanità pubblica, mobilità urbana, portfolio">
   <meta name="author" content="Emilio Nahuel Pattini">
   <meta name="robots" content="index, follow">
 
-  <!-- Open Graph -->
+  <!-- Open Graph (Facebook, LinkedIn, WhatsApp, etc.) -->
   <meta property="og:title" content="Emilio Nahuel Pattini | Portfolio Analista Dati & Sviluppatore Web">
-  <meta property="og:description" content="Esplorando i dati urbani e creando siti web moderni. In evidenza analisi della mobilità e sviluppo frontend. Connettiamoci!">
+  <meta property="og:description" content="Esplorando dati urbani e costruendo siti web moderni. In evidenza nell’analisi della mobilità e nello sviluppo frontend. Connettiamoci!">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.emilionahuelpattini.com">
   <meta property="og:image" content="https://www.emilionahuelpattini.com/images/portfolio-og-image.jpg">
   <meta property="og:image:alt" content="Miniatura del portfolio di Emilio Nahuel Pattini">
   <meta property="og:site_name" content="Portfolio di Emilio Nahuel Pattini">
 
-  <!-- Twitter -->
+  <!-- Twitter / X Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Emilio Nahuel Pattini | Portfolio Dati & Web">
-  <meta name="twitter:description" content="Analista Dati & Sviluppatore Web | Progetti di analisi mobilità urbana e sviluppo web responsivo">
+  <meta name="twitter:description" content="Analista Dati & Sviluppatore Web | Progetti in analisi della mobilità urbana e sviluppo web responsivo">
   <meta name="twitter:image" content="https://www.emilionahuelpattini.com/images/portfolio-og-image.jpg">
 
+  <!-- Canonical URL (prevents duplicate content issues) -->
   <link rel="canonical" href="https://www.emilionahuelpattini.com/it/data/data-analysis/data-analysis.html">
 
   <link rel="alternate" hreflang="en" href="https://www.emilionahuelpattini.com/en/data/data-analysis/data-analysis.html">
   <link rel="alternate" hreflang="es" href="https://www.emilionahuelpattini.com/es/data/data-analysis/data-analysis.html">
   <link rel="alternate" hreflang="it" href="https://www.emilionahuelpattini.com/it/data/data-analysis/data-analysis.html">
 
+
+  <!-- Favicon (place your favicon.ico in the root) -->
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
+
+  <!-- ==================== HEADER (loaded dynamically via JS) ==================== -->
   <div id="header"></div>
 
+  <!-- ==================== DATA ANALYSIS INTRODUCTION SECTION ==================== -->
   <section class="intro">
     <h1>Analisi dei Dati</h1>
-
-    <h2>Panoramica</h2>
-      <p>Questa pagina mette in mostra le mie competenze nell'analisi di dati di business e mobilità urbana, estraendo insight actionable e presentando i risultati in modo chiaro.</p>
+    
+      <h2>Panoramica</h2>
       <p>
-        Evidenzia la mia capacità di gestire dataset reali, applicare metodi statistici e di ML, costruire dashboard interattivi e comunicare efficacemente i risultati.  
-        Dimostrato attraverso progetti come <strong>Analisi dell'E-Commerce Brasiliano – Olist</strong> (RFM, cohorts, forecasting, Power BI) e Analisi della Mobilità Urbana Ecobici 2024.
+        Mi specializzo nel trasformare dataset complessi in insight chiari e azionabili utilizzando strumenti e metodologie moderne. 
+        Il mio focus è su SQL avanzato, analisi riproducibile, modellazione statistica, clustering e creazione di dashboard interattivi.
       </p>
-          
     <!-- ==================== FEATURED PROJECT SLIDER ==================== -->
     <div class="slider">
-      <!-- Slide 1: Olist Analysis (only one featured for this page) -->
+      <!-- Slide 1: Diabetes Risk Analysis -->
+      <div class="slide active">
+        <div class="image-area">
+          <a href="projects/diabetes-report/diabetes-risk-analysis.html" target="_blank">
+            <img src="projects/diabetes-report/images/diabetes_risk_predictor.jpg" 
+                 alt="Dashboard Analisi Rischio Diabete">
+          </a>
+        </div>
+        <p>
+          <strong>Analisi del Rischio di Diabete e Insight di Sanità Pubblica</strong><br>
+          Progetto end-to-end con uso intensivo di SQL (DuckDB), feature engineering, classificazione binaria, clustering K-Means 
+          e un dashboard interattivo completo in Streamlit. Include contesto latinoamericano e proiezioni al 2050.
+        </p>
+      </div>
+      <!-- Slide 2: Olist Analysis -->
       <div class="slide active">
         <div class="image-area">
           <a href="projects/olist-report/olist-ecommerce-analysis.html" target="_blank">
-            <img src="projects/olist-report/images/screenshots/olist_overview_page.png" alt="Olist Brazilian E-Commerce Analysis - Dashboard">
+            <img src="projects/olist-report/images/screenshots/olist_overview_page.png" alt="Dashboard Analisi E-Commerce Brasiliano Olist">
           </a>
         </div>
-        <p>Analisi E-Commerce Brasiliano Olist: segmentazione RFM, retention cohorts, previsione con Prophet e dashboard interattivo Power BI con insight actionable.</p>
+        <p><strong>Analisi E-Commerce Brasiliano Olist: </strong>segmentazione RFM, retention per coorti, forecasting con Prophet e dashboard interattivo in Power BI con insight azionabili di business.</p>
       </div>
-      <!-- Slide 2: Ecobici Analysis -->
+      <!-- Slide 3: Ecobici Analysis -->
       <div class="slide">
         <div class="image-area">
           <a href="projects/ecobici-2024/urban-mobility-analysis.html" target="_blank">
-            <img src="projects/ecobici-2024/dashboard_thumbnail.png" alt="Ecobici 2024 Thumbnail - Urban Mobility Dashboard">
+            <img src="projects/ecobici-2024/dashboard_thumbnail.png" alt="Miniatura Ecobici 2024 - Dashboard Mobilità Urbana">
           </a>
         </div>
-        <p>Ecobici 2024: Analisi della Mobilità Urbana focalizzata su pattern di utilizzo del bike-sharing e performance delle stazioni.</p>
+        <p><strong>Ecobici 2024: </strong>Analisi della Mobilità Urbana focalizzata su pattern di utilizzo del bike-sharing e performance delle stazioni.</p>
       </div>
 
       <!-- Navigation Controls -->
-      <button class="prev" aria-label="Slide anterior">&#10094;</button>
-      <button class="next" aria-label="Slide siguiente">&#10095;</button>
+      <button class="prev" aria-label="Previous slide">&#10094;</button>
+      <button class="next" aria-label="Next slide">&#10095;</button>
 
       <!-- Dots Navigation (dynamically populated by JS) -->
       <div class="dots" role="tablist"></div>
+
       <!-- Screen reader announcement live region -->
       <div class="sr-announcer" aria-live="polite" aria-atomic="true" style="position:absolute; left:-9999px;"></div>
     </div>
     <!-- =================================================================== -->
 
-    <h2>Competenze Evidenziate</h2>
+    <h2>Competenze e Strumenti</h2>
       <ul>
-        <li><strong>Programmazione e Strumenti:</strong> Python (pandas, numpy, seaborn, plotly, prophet), R (tidyverse, lubridate, leaflet), SQL (DuckDB, MySQL, PostgreSQL, DB2)</li>
-        <li><strong>Analisi Esplorativa dei Dati:</strong> trend temporali, spaziali, demografici e di comportamento clienti (RFM, cohorts)</li>
-        <li><strong>Preparazione Dati & Feature Engineering:</strong> pulizia, trasformazione, feature di logica business (delta di consegna, metriche di ritardo), workflow riproducibili (Jupyter, RMarkdown)</li>
-        <li><strong>Segmentazione Clienti e Business:</strong> scoring RFM, visualizzazione segmenti e raccomandazioni actionable (retention, upselling, win-back)</li>
-        <li><strong>Previsione e Serie Temporali:</strong> Prophet per previsione ricavi, rilevamento stagionalità, limiti di incertezza, scenari di crescita</li>
-        <li><strong>Visualizzazione e Dashboarding:</strong> Tableau, Plotly (grafici interattivi), Power BI (KPI, Gauges, scatter, heatmap, bubble maps), Matplotlib, Seaborn</li>
-        <li><strong>Metodi Analitici:</strong> analisi retention cohorts, performance consegna per regione, hypothesis testing, intro base a ML</li>
-        <li><strong>Comunicazione e Storytelling:</strong> storytelling business, raccomandazioni actionable, report multilingue (EN/ES/IT) e presentazione insight</li>
+        <li><strong>Tecnologie Principali:</strong> Python (pandas, scikit-learn, numpy, prophet), SQL (DuckDB, MySQL, PostgreSQL, DB2), R (tidyverse, lubridate, leaflet)</li>
+        <li><strong>Data Engineering:</strong> Pulizia avanzata dei dati, feature engineering, workflow riproducibili (Jupyter, RMarkdown)</li>
+        <li><strong>Analisi e Modellazione:</strong> Exploratory Data Analysis (temporale, spaziale, demografico, coorti RFM), Classificazione Binaria, Clustering K-Means, Risk Scoring, Forecasting e Serie Temporali (Prophet per previsione dei ricavi, rilevamento stagionalità, scenari di crescita)</li>
+        <li><strong>Segmentazione Clienti e Business:</strong> RFM scoring, visualizzazione dei segmenti, raccomandazioni azionabili (retention, upselling, win-back)</li>
+        <li><strong>Visualizzazione e Dashboard:</strong> Streamlit, Power BI, Tableau, Plotly, Matplotlib, Seaborn</li>
+        <li><strong>Conoscenza di Dominio:</strong> Sanità Pubblica, Comportamento del Cliente, Mobilità Urbana</li>
+        <li><strong>Lingue:</strong> Inglese, Spagnolo, Italiano (reportistica multilingue)</li>
       </ul>
 
     <h2>Progetti in Evidenza</h2>
     
-      <h3>Analisi dell'E-Commerce Brasiliano – Olist</h3>
+      <h3>Analisi del Rischio di Diabete e Insight di Sanità Pubblica</h3>
         <p>
-          Analisi end-to-end completa: segmentazione RFM, retention cohorts, previsione ricavi con Prophet, dashboard interattivo in Power BI.  
-          Risultato chiave: identificato 97 % clienti one-time e enorme opportunità di retention.
+          Progetto end-to-end completo utilizzando i dati BRFSS 2023. Forte enfasi su SQL con DuckDB, 
+          feature engineering, modellazione di classificazione binaria, segmentazione della popolazione tramite clustering 
+          e un dashboard interattivo professionale in Streamlit. Include trend in America Latina e proiezioni al 2050.
         </p>
-        <a href="projects/olist-report/olist-ecommerce-analysis.html" target="_blank">Visualizza Online</a> | 
-        <a href="https://github.com/ENPattini/olist-ecommerce-analysis" target="_blank">Repository GitHub</a>
+        <a href="projects/diabetes-report/diabetes-risk-analysis.html" target="_blank">Vedi Online</a> | 
+        <a href="https://github.com/ENPattini/diabetes-risk-analysis" target="_blank">Repo GitHub</a>
 
-      <h3>Analisi Mobilità Urbana Ecobici 2024</h3>
+      <h3>Analisi E-Commerce Brasiliano Olist</h3>
         <p>
-          Analisi approfondita dei dati di bike-sharing urbano per comprendere pattern di utilizzo, orari di picco e performance delle stazioni.  
-          Il progetto ha coinvolto pulizia di grandi dataset, analisi esplorativa e visualizzazione di trend chiave per informare decisioni di pianificazione urbana.
+          Analisi end-to-end completa: segmentazione RFM, retention per coorti, previsione dei ricavi con Prophet, dashboard interattivo in Power BI.  
+          Risultato chiave: identificato il 97% di acquirenti una tantum e una grande opportunità di retention.
         </p>
-        <a href="projects/ecobici-2024/urban-mobility-analysis.html" target="_blank" rel="noopener noreferrer">Visualizza Online</a> | 
-        <a href="https://github.com/ENPattini/ecobici-2024-analysis" target="_blank">Repository GitHub</a>
+        <a href="projects/olist-report/olist-ecommerce-analysis.html" target="_blank">Vedi Online</a> | 
+        <a href="https://github.com/ENPattini/olist-ecommerce-analysis" target="_blank">Repo GitHub</a> 
 
+      <h3>Ecobici 2024 - Analisi della Mobilità Urbana</h3>
+        <p>
+          Analisi approfondita dei dati di bike-sharing urbano per comprendere pattern di utilizzo, orari di punta e performance delle stazioni. 
+          Questo progetto ha coinvolto pulizia di grandi dataset, analisi esplorativa e visualizzazione delle tendenze chiave 
+          per supportare decisioni di pianificazione urbana.
+        </p>
+        
+        <a href="projects/ecobici-2024/urban-mobility-analysis.html" target="_blank" rel="noopener noreferrer"> Vedi Online </a> |
+        <a href="https://github.com/ENPattini/ecobici-2024-analysis" target="_blank">Repo GitHub</a> 
+        
       <!-- ==================== Embedded dashboard ==================== --> 
       <section id="powerbi-dashboard">
         <h3>Dashboard Interattivo in Power BI</h3>
         <p>
-          Dashboard interattivo completo con KPI globali, previsione ricavi, heatmap dei cohorts, confronto segmenti RFM, mappa ricavi per stato e top categorie.
-          Filtra per stato, categoria o segmento per esplorare gli insight in modo dinamico.
+          Dashboard interattivo completo con KPI globali, previsione dei ricavi, heatmap delle coorti, confronto dei segmenti RFM, mappa dei ricavi per stato e categorie principali.  
+          Filtra per stato, categoria o segmento per esplorare gli insight dinamicamente.
         </p>
 
         <div style="max-width: 1200px; margin: 0 auto; padding: 20px 0;">
           <iframe 
-            title="Olist Analytics Dashboard" 
+            title="Dashboard Olist Analytics" 
             width="100%" 
             height="600px" 
             src="https://app.powerbi.com/view?r=eyJrIjoiNTFjYTAyYTctYTU0YS00ZWIzLTljZTEtMDQ0MjA4MzljODI3IiwidCI6IjZiNTQyOWEzLTM3MjItNDA3Yy04NmQyLWY4MGViNjEwMjU4MSIsImMiOjR9" 
@@ -134,11 +167,15 @@
         </div>
 
         <p style="text-align: center; font-size: 0.9em; color: #666;">
-          <a href="https://app.powerbi.com/view?r=eyJrIjoiNTFjYTAyYTctYTU0YS00ZWIzLTljZTEtMDQ0MjA4MzljODI3IiwidCI6IjZiNTQyOWEzLTM3MjItNDA3Yy04NmQyLWY4MGViNjEwMjU4MSIsImMiOjR9" target="_blank">Apri dashboard in una nuova scheda (Power BI Service)</a>
+          <a href="https://app.powerbi.com/view?r=eyJrIjoiNTFjYTAyYTctYTU0YS00ZWIzLTljZTEtMDQ0MjA4MzljODI3IiwidCI6IjZiNTQyOWEzLTM3MjItNDA3Yy04NmQyLWY4MGViNjEwMjU4MSIsImMiOjR9" target="_blank">Apri dashboard in nuova scheda (Power BI Service)</a>
         </p>
       </section>
+
+
   </section>
 
+  <!-- ==================== FOOTER (loaded dynamically via JS) ==================== -->
   <div id="footer"></div>
+
 </body>
 </html>

@@ -267,6 +267,10 @@ function attachSearchListeners() {
 
   // Static list of searchable works/projects
   const works = [
+    { title: "Diabetes Risk Analysis - SQL, ML & Streamlit", url: "/en/data/data-analysis/projects/diabetes-report/diabetes-risk-analysis.html", lang: "en" },
+    { title: "Análisis de Riesgo de Diabetes - SQL, ML y Streamlit", url: "/es/data/data-analysis/projects/diabetes-report/diabetes-risk-analysis.html", lang: "es" },
+    { title: "Analisi del Rischio Diabete - SQL, ML e Streamlit", url: "/it/data/data-analysis/projects/diabetes-report/diabetes-risk-analysis.html", lang: "it" },
+
     { title: "Data Analysis - Urban Mobility Ecobici 2024 - R & Tableau", url: "/en/data/data-analysis/projects/ecobici-2024/urban-mobility-analysis.html", lang: "en" },
     { title: "Análisis de Datos - Movilidad Urbana Ecobici 2024 - R y Tableau", url: "/es/data/data-analysis/projects/ecobici-2024/urban-mobility-analysis.html", lang: "es" },
     { title: "Analisi Dati - Mobilità Urbana Ecobici 2024 - R e Tableau", url: "/it/data/data-analysis/projects/ecobici-2024/urban-mobility-analysis.html", lang: "it" },
